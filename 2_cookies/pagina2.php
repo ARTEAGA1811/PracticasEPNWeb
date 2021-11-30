@@ -11,7 +11,7 @@
     #con el isset se verifica si existe la variable, con el ? y el : se pregunta si es true o false respectivamente
     #si es true se crea la cookie, si es false no se crea la cookie
     setcookie("c_nombre", isset($_POST["nombre"])? $_POST["nombre"] : "");
-    setcookie("c_cookie", isset($_POST["clave"]) ? $_POST["clave"] : "", time()+60*60);
+    setcookie("c_clave", isset($_POST["clave"]) ? $_POST["clave"] : "", time()+60*60);
     setcookie("c_sexo", isset($_POST["hm"]) ? $_POST["hm"] : "", time()+60*60);
     setcookie("c_preferencias", isset($_POST["chkpreferencias"]) ? $_POST["chkpreferencias"] : false)
     
@@ -35,9 +35,6 @@
     <br>
     <a href="borrarCookie.php?borrar=0">Regresar a LOGIN</a>
 
-    <   ?php
-
-    ?>
     <a href="/2_cookies/borrarCookie.php">Borrar Cookies</a>
 </body>
 </html>

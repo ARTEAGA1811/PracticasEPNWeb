@@ -5,7 +5,7 @@
 //con el /temporal se indica que se guardara en la carpeta temporal del servidor.
 //La carpeta temporal se creo en la carpeta htdocs
 //Las sesiones se guardan en esa carpeta.
-$pathSesiones = $_SERVER['DOCUMENT_ROOT'] . "/temporal";
+$pathSesiones = $_SERVER["DOCUMENT_ROOT"]. "/temporal";
 ini_set("session.save_path", $pathSesiones);
 
 session_start(); //Con esto habilitamos las sesiones, siempre debe
@@ -13,13 +13,12 @@ session_start(); //Con esto habilitamos las sesiones, siempre debe
 
 
 //El isset sirve para validar que el parametro que se pasa no sea nulo.
-if(!isset($_SESSION['usuario']) && !isset($_SESSION['clave'])){
-    //Se comprueba que los valores no esten vacios
-    if($_POST["nombre"] != "" && $_POST["clave"] !=""){
-        $_SESSION['nombre'] = $_POST['nombre'];
-        $_SESSION["clave"] = $_POST['clave'];
+if(!isset($_SESSION["nombre"]) && !isset($_SESSION["clave"])){
+    if ($_POST["nombre"]!= "" && $_POST["clave"]!= ""){
+        $_SESSION["nombre"] = $_POST["nombre"];
+        $_SESSION["clave"] = $_POST["clave"];
     }else{
-        header("Location: index.php");
+        header("Location:index.php");
     }
 }
 

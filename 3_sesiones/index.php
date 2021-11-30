@@ -7,14 +7,13 @@
     <title>Login</title>
 </head>
 <body>
-    <h1>Formulario LOGIN: Intranet</h1>
-    <form action="miPanel.php" method="POST">
-        Usuario: <br>
-        <input type="text" name="nombre" value=""><br>
-        Clave: <br>
-        <input type="password" name="clave"> <br> <br>
-        <input type="submit" value="Ingresar">
+    <h1>Formulario Login: Intranet</h1>
+    <form action="mipanel.php" method="POST">
+        Usuario:<br>
+        <input type="text" name="nombre"/><br>
+        Clave:<br>
+        <input type="password" name="clave"/><br><br>
+        <input type="submit" value="Ingresar"/>
     </form>
-
 </body>
 </html>
