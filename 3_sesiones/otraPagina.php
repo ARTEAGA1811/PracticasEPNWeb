@@ -1,5 +1,8 @@
 <?php
+$pathSesiones = $_SERVER["DOCUMENT_ROOT"]."/temporal";
+ini_set("session.save_path", $pathSesiones);
 session_start();
+//Si no existe la sesion, se redirige a la pagina de inicio
 if(!isset($_SESSION["nombre"]) && !isset($_SESSION["clave"])){
     header("Location:index.php");
 }

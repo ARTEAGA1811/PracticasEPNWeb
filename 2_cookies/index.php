@@ -2,7 +2,7 @@
 $nombre = "";
 $clave = "";
 $sexo = "";
-$preferencias = "";
+$preferencias = false;
 
 if(count($_COOKIE)>0){
     if(isset($_COOKIE["c_preferencias"])){

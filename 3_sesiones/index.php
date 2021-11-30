@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Formulario Login: Intranet</h1>
-    <form action="mipanel.php" method="POST">
+    <form action="miPanel.php" method="POST">
         Usuario:<br>
         <input type="text" name="nombre"/><br>
         Clave:<br>
