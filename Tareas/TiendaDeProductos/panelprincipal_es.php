@@ -42,7 +42,7 @@ if(isset($_POST["chkpreferencias"])){
         <li><a href="panelprincipal_en.php" >EN(English)</a></li>
     </ul> 
     <br>
-    <a href="CerrarSesion.php">Cerrar Sesion</a>
+    <a href="CerrarSesion.php">Cerrar Sesión</a>
     <br>
     <h2>Lista de Productos</h2>
     <?php
