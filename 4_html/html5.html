@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos HTML</title>
+</head>
+<body>
+    <main>
+        <section>
+            <h3>Titulo de la noticia</h3>
+            <article>asdfs sfsdf a fsadf sdf fsadf </article>
+        </section>
+        <section>
+            <h1>Controles de HTML 5 (los nuevos)</h1>
+            <!--   color -->
+            <label for="cuadroColor">Select your favorite color</label>
+            <input type="color" id="cuadroColor" name="color" value="#ff0000">
+            <br>
+            <!--   search -->
+            <input type="search" name="buscar" placeholder="Cancion, autor, album...">
+            <br>
+            <!-- progress-->
+            <label for="file">Dowloading progress:</label>
+            <progress id="file" value="32" max="100">32%</progress>
+
+            <br>
+            <!-- datalist-->
+            <p>Listas en HTML 5: </p>
+            <input type="text" name="tiposListas" list="diferentesListas">
+            <datalist id="diferentesListas">
+                <option>Ordenadas</option>
+                <option>No ordenadas</option>
+            </datalist>
+        </section>
+        <aside>
+            <!--TAbla-->
+            <table border="1">
+                <caption>Asignaturas</caption>
+                <details>
+                    <summary>
+                        Esta tabla contiene distintas asignaturas
+                    </summary>
+                </details>
+                <tr>
+                    <th>Primer trimestre</th>
+                    <th>Segundo trimestre</th>
+                </tr>
+                <tr>
+                    <td>Fundamentos</td>
+                    <td>Lenguajes</td>
+                </tr>
+                <tr>
+                    <td>App Web</td>
+                    <td>HCI</td>
+                </tr>
+            </table>
+        </aside>
+        <!--URL-->
+        <audio src="" controls ></audio>
+        <br>
+        <video width="360" height="240" controls>
+            <source src="" type="video/mp4">
+        </video>
+        <br>
+        <!--<iframe width="360" height="240" src="https://www.youtube.com/embed/0e3GPea1Tyg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+
+        <br>
+        <article>
+            <h1>Controles de formulario</h1>
+            <form action="">
+                <label for="direccion">Direccion:</label>
+                <input type="text" name="direccion" required> <br>
+
+                <label for="contrasena">Contrasena:</label>
+                <input type="password" name="contrasena" id="contrasena" required minlength="8"> <br>
+
+                <label for="mail">Correo:</label>
+                <input type="email" name="mail" id="mail" required> <br>
+
+                <label for="telefono">Telefono (9 digitos comenzando por 9,8,7 o 6)</label>
+                <input type="number" pattern="^[9|8|7|6]\d{8}$" required> <br>
+
+                <input type="submit">
+
+            </form>
+        </article>
+    </main>
+    <footer>
+        Todos los derechos reservados
+    </footer>
+</body>
+</html>

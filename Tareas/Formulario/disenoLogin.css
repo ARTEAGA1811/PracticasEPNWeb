@@ -1,0 +1,40 @@
+main{
+    width: 400px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 40px auto;
+    border: 2px solid #000;
+    background-color: lightblue;
+}
+.titulo{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.info{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.inp{
+    border-radius: 5px;
+    border: 1px solid #000;
+    padding: 5px;
+}
+#btnEnviar{
+    font-size: medium;
+    font-weight: bold;
+
+}
+
+footer{
+    text-align: center;
+    color: red;
+}

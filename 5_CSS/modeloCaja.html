@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caja</title>
+    <style>
+        /*Si no ponemos nada, por defecto viene el box-sizing: content-box*/
+        .valor1{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            /*Padding es el espacio entre el borde y el contenido.*/
+            padding: 20px;
+            margin: 40px;
+        }
+
+        .valor2{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            /*Padding es el espacio entre el borde y el contenido.*/
+            padding: 20px 50px;
+            margin: 40px 60px;
+        }
+
+        .valor3{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            /*Padding es el espacio entre el borde y el contenido.*/
+            padding: 20px 10px 30px;
+            margin: 40px 60px;
+        }
+
+        .valor4{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            /*Padding es el espacio entre el borde y el contenido.*/
+            padding: 20px 10px 30px 5px; 
+            margin: 40px 60px;
+        }
+
+        .cajanormal{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            /*Padding es el espacio entre el borde y el contenido.*/
+            padding: 20px 10px 30px;
+            margin: 40px 60px;
+        }
+
+        /*Tiene que reajustarse para que calce desde el borde hasta adentro*/
+        /*No toma en cuenta el margin el box-sizing*/
+        .cajaboxsizing-borderbox{
+            width: 100px;
+            height: 100px;
+            background-color: brown;
+            /*Padding es el espacio entre el borde y el contenido.*/
+            padding: 20px 10px 30px;
+            margin: 40px 60px;
+            box-sizing: border-box;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="valor1">caja, margin/padding: 1 valor</div>
+    <div class="valor2">caja, margin/padding: 2 valor</div>
+    <div class="valor3">caja, margin/padding: 3 valor</div>
+    <div class="valor4">caja, margin/padding: 4 valor</div>
+
+    <div>
+        <div class="cajanormal"></div>
+        <div class="cajaboxsizing-borderbox"></div>
+    </div>
+
+    
+</body>
+</html>

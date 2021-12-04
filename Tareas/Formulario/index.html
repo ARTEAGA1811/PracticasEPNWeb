@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacta.me Registro</title>
+    <style>
+        main{
+            width: 400px;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 40px auto;
+            border: 2px solid #000;
+            background-color: lightblue;
+        }
+        .titulo{
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .info{
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .inp{
+            border-radius: 5px;
+            border: 1px solid #000;
+            padding: 5px;
+        }
+        #btnEnviar{
+            font-size: medium;
+            font-weight: bold;
+        }
+
+        footer{
+            text-align: center;
+            color: red;
+        }
+        
+    </style>
+</head>
+<body>
+    <main>
+        <div class="titulo">Contacta.me</div>
+        <div class="titulo">REGISTRO</div>
+        <form action="">
+            <label for="nombre" class="info">Nombre *</label> <br>
+            <input type="text" name="nombre" required class="inp"> <br> <br>
+
+            <label for="apellido" class="info">Apellido *</label> <br>
+            <input type="text" name="apellido" required class="inp"> <br> <br>
+
+            <label for="email" class="info">Correo Electrónico *</label> <br>
+            <input type="email" name="email" required class="inp"> <br> <br>
+
+            <label for="telefono" class="info">Teléfono </label> <br>
+            <input type="text" name="telefono" class="inp" pattern="^[0-9]{10}$" maxlength="10" placeholder="10 dígitos" required> <br> <br>
+
+            <label for="password" class="info">Contraseña *</label> <br>
+            <input type="password" name="password" required class="inp" placeholder="Al menos 8 caracteres" pattern=".{8,}"> <br> <br>
+
+            <label for="cargos" class="info">Cargo</label> <br>
+            <select name="cargos" class="inp">
+                <option value="opcion1">Director</option>
+                <option value="opcion2">Operador</option>
+                <option value="opcion3">Supervisor</option>
+            </select>
+            <br> <br>
+            <input type="submit" class="inp" id="btnEnviar">
+        </form>
+    </main>
+    <footer>
+        * Requerido
+    </footer>
+    Nombre: David Arteaga <br>
+    
+</body>
+</html>
