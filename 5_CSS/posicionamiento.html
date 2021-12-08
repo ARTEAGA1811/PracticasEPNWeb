@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamiento</title>
+    <style>
+        #normal div, #flotante div {
+            border: 1px solid black;
+            width: 300px;
+            height: 100px;
+        }
+        #flotante{
+            margin-top: 20px;
+        }
+
+        #normal .caja2{
+            float: right;
+        }
+
+        #flotante div{
+            float: left;
+        }
+        .separador-tuco{
+            clear: both;
+            height: 25px;
+        }
+        #articulo img{
+            float: left;
+            margin: 0px 15px 15px 0px;
+    
+        }
+
+        .izquierda{
+            float: left;
+        }
+        .derecha{
+            float: right;
+        }
+        .paginacion{
+            background-color: rgb(151, 151, 151);
+            border: 1px solid black;
+            padding: .5em;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div id="normal">
+        <div class="caja1">caja 1</div>
+        <div class="caja2">caja 2</div>
+        <div class="caja3">caja 3</div>
+    </div>
+    <div id="flotante">
+        <div class="caja1">caja 1</div>
+        <div class="caja2">caja 2</div>
+        <div class="caja3">caja 3</div>
+    </div>
+    <div class="separador-tuco"></div>
+    <div id="articulo">
+        <img src="https://fis.epn.edu.ec/images/logo-FIS-sin-fondo.png" alt="logoFIS" width="100px" height="100px">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ducimus praesentium fugiat sequi nihil ea, sunt repellat aliquam deleniti officiis similique illum aut? Quidem excepturi distinctio officia nemo molestias ipsum.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ducimus praesentium fugiat sequi nihil ea, sunt repellat aliquam deleniti officiis similique illum aut? Quidem excepturi distinctio officia nemo molestias ipsum.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ducimus praesentium fugiat sequi nihil ea, sunt repellat aliquam deleniti officiis similique illum aut? Quidem excepturi distinctio officia nemo molestias ipsum.</p>
+    </div>
+    <div class="separador-tuco"></div>
+    <div class="paginacion">
+        <div class="izquierda">Atrás</div>
+        <div class="derecha">Adelante</div>
+    </div>
+
+</body>
+</html>
