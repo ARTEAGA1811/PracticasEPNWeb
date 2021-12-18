@@ -1,5 +1,5 @@
 # PracticasEPNWeb
-### Este repositorio contiene las prácticas realizadas y las tareas en en la materia de Aplicaciones Web.
+### Este repositorio contiene las prácticas y tareas realizadas para la materia de Aplicaciones Web.
 <br>
 Autor:  
 <br>
