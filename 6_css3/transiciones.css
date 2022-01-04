@@ -1,0 +1,43 @@
+#efectos div{
+    width: 150px;
+    height: 50px;
+    background-color: green;
+    color: white;
+    font-size: small;
+    text-align: center;
+    border: 1px solid black;
+    margin-top: 10px;
+    /*Aqui se ingresa la transicion*/
+    transition: width 1s;
+    transition-delay: 1s;
+    /*Para que agarre en los diferentes navegadores*/
+    -moz-transition-delay: 1s;
+    -webkit-transition-delay: 1s;
+    -o-transition-delay: 1s;
+
+    /* transition-timing-function: ease; */
+
+}
+
+#efectos div:hover{
+    width: 250px;
+}
+
+#efectos div:nth-child(1){
+    transition-timing-function: linear;
+}
+#efectos div:nth-child(2){
+    transition-timing-function: ease;
+}
+#efectos div:nth-child(3){
+    transition-timing-function: ease-in;
+}
+#efectos div:nth-child(4){
+    transition-timing-function: ease-out;
+}
+#efectos div:nth-child(5){
+    transition-timing-function: ease-in-out;
+}
+#efectos div:nth-child(6){
+    transition-timing-function: cubic-bezier(0.4s, 0.0s, 0.2s, 1);
+}
