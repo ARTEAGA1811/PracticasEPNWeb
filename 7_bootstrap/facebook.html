@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <!-- bootstrap y fontawesome -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/50224b5092.js" crossorigin="anonymous"></script>
+    <style>
+        /* *{
+            border: 1px solid black;
+        } */
+        .boton{
+            width: 40px;
+            height: 40px;
+
+        }
+
+        .mi-estilo-color-gris{
+            background-color: #f0f2f5;
+        }
+        .mi-estilo-color-azul{
+            background-color: #446cb3;
+        }	
+    </style>
+</head>
+<body class="mi-estilo-color-gris">
+    <div class="container-fluid">
+        <div class="row bg-white border-bottom">
+            <div class="col">
+                <div class="boton rounded-circle float-start m-2 mi-estilo-color-azul p-lg-2 pt-1"><i class="fab fa-facebook-f text-white fa-2x"></i></div>
+                <div class="boton rounded-circle float-start m-2 mi-estilo-color-gris p-lg-2"> <i class="fas fa-search fa-2x"></i></div>
+                <div class="boton rounded-circle float-end m-2 mi-estilo-color-gris p-lg-2"><i class="fas fa-house-user fa-2x"></i></div>
+                <div class="boton rounded-circle float-end m-2 mi-estilo-color-gris p-lg-2"><i class="fas fa-dice-d6 fa-2x"></i></div>
+                <div class="boton rounded-circle float-end m-2 mi-estilo-color-gris p-lg-2"><i class="fas fa-comment-dots fa-2x"></i></div>
+                <div class="boton rounded-circle float-end m-2 mi-estilo-color-gris p-lg-2"><i class="fas fa-horse-head fa-2x"></i></div> 
+            </div>
+        </div>
+        <div class="row">
+            <!-- Lista de opciones -->
+            <!-- en las pantallas grandes que use 3 columnas, en las otras, quitar esta parte d-none = display:none -->
+            <div class="col-lg-3 d-none d-lg-block">
+                <ul>
+                    <li>David Arteaga</li>
+                    <li>Amigos</li>
+                    <li>Grupos</li>
+                    <li>Marketplace</li>
+                    <li>Watch</li>
+                </ul>
+            </div>
+            <!-- Publicaciones -->
+            <div class="col-12 col-md-6">
+                <div class="container-fluid">
+                    <div class="row bg-white rounded">
+                        <!-- Avatar -->
+                        <div class="col-1">
+                            <div class="boton rounded-circle float-start m-2 p-lg-2 pt-1">
+                                <!-- Para hacer la imagen responsive se hace img-fluid -->
+                                <img src="https://scontent.fuio5-1.fna.fbcdn.net/v/t1.6435-9/133647192_1450898508449995_1531153005988779720_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=l5tx507t9poAX9weL-w&_nc_ht=scontent.fuio5-1.fna&oh=00_AT8LgNS3HqqYuRtBfmLxHTkpSj_T6_pNbENOJVj33_plHA&oe=61F9C5E1" alt="yop" class="img-fluid">
+                            </div>
+                        </div>
+                        <!-- Buscar -->
+                        <div class="col-11">
+                            <div class="h-75 float-start border mi-estilo-color-gris m-2 rounded-pill p-lg-2">Whats on your mind</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <!-- publicacion -->
+                            <div class="border rounded bg-white mt-4 p-lg-4">
+                                <img class="img-fluid rounded" src="https://www.purina-latam.com/sites/g/files/auxxlc391/files/styles/large/public/purina-tips-para-ir-a-la-playa-con-perros.jpg?itok=cLc_oD0I" alt="Foto del firulais">
+                                <div>
+                                    <h5>Las vacaciones del firulais</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem cum dolor aspernatur aut, fuga delectus vero. Labore impedit a debitis! Reiciendis vitae quos eligendi ab deserunt provident autem omnis asperiores?</p>
+                                </div>
+                            </div>
+                            <!-- publicacion -->
+                            <div class="border rounded bg-white mt-4 p-lg-4">
+                                <img class="img-fluid rounded" src="https://www.purina-latam.com/sites/g/files/auxxlc391/files/styles/large/public/purina-tips-para-ir-a-la-playa-con-perros.jpg?itok=cLc_oD0I" alt="Foto del firulais">
+                                <div>
+                                    <h5>Las vacaciones del firulais</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem cum dolor aspernatur aut, fuga delectus vero. Labore impedit a debitis! Reiciendis vitae quos eligendi ab deserunt provident autem omnis asperiores?</p>
+                                </div>
+                            </div>
+                            <!-- publicacion -->
+                            <div class="border rounded bg-white mt-4 p-lg-4">
+                                <img class="img-fluid rounded" src="https://www.purina-latam.com/sites/g/files/auxxlc391/files/styles/large/public/purina-tips-para-ir-a-la-playa-con-perros.jpg?itok=cLc_oD0I" alt="Foto del firulais">
+                                <div>
+                                    <h5>Las vacaciones del firulais</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem cum dolor aspernatur aut, fuga delectus vero. Labore impedit a debitis! Reiciendis vitae quos eligendi ab deserunt provident autem omnis asperiores?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- anuncios publicitarios -->
+            <div class="col d-none d-lg-block">
+                <div class="bg-white border rounded p-lg-2 m-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, commodi debitis. Repellat facere quasi omnis unde velit vero illum magni autem nesciunt ducimus distinctio reiciendis, ad sapiente id voluptates? Sed?</div>
+                <div class="bg-white border rounded p-lg-2 m-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, commodi debitis. Repellat facere quasi omnis unde velit vero illum magni autem nesciunt ducimus distinctio reiciendis, ad sapiente id voluptates? Sed?</div>
+                <div class="bg-white border rounded p-lg-2 m-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, commodi debitis. Repellat facere quasi omnis unde velit vero illum magni autem nesciunt ducimus distinctio reiciendis, ad sapiente id voluptates? Sed?</div>
+                <div class="bg-white border rounded p-lg-2 m-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, commodi debitis. Repellat facere quasi omnis unde velit vero illum magni autem nesciunt ducimus distinctio reiciendis, ad sapiente id voluptates? Sed?</div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- el bootstrap para js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
