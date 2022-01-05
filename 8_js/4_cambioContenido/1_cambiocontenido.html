@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAmbio de contenido con JS</title>
+</head>
+<body>
+    <h1>Cambio de contenido</h1>
+    <div class="miclase">DIV 1</div>
+    <div class="miclase">DIV 2</div>
+
+    <button onclick="cambiarContenidoElementoHTML();">Cambiar Contenido DIVs</button>
+
+    <script>
+        function cambiarContenidoElementoHTML() {
+            //Asi tambien se puede hacer
+            //var elemento = document.getElementsByClassName('miclase');
+            // elemento[0].innerHTML = 'Nuevo contenido DIV 1';
+            // elemento[1].innerHTML = 'Nuevo contenido DIV 2';
+
+
+            //Usando el queryselsctorAll con el foreach
+            var arrayElementos = document.querySelectorAll('.miclase');
+
+            //ASI SE HACE NORMALMENTE
+            // arrayElementos.forEach(miFuncion);
+
+            // function miFuncion(elemento) {
+            //     elemento.textContent = 'DIV con contenido cambiado';
+            //     //Cuando usamos textContent agregamos el texto puro, un texto comun caulquiera, un string.
+            //     //Cuando usamos innerHTML agregamos el contenido html, codigo html.
+            // }
+
+
+            //AHORA SE USA LA FUNCION FLECHA
+            arrayElementos.forEach(elemento => elemento.textContent = 'DIV con contenido cambiado');
+            //o tambien, se puede usar corchetes para mejor visualizacion
+            /*
+            arrayElementos.forEach(elemento => {
+                elemento.textContent = 'DIV con contenido cambiado'
+            });
+            */
+    
+
+
+        }
+    </script>
+</body>
+</html>

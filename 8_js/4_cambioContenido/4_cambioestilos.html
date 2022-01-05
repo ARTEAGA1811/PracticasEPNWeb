@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambio de Estilos STYLE con JS</title>
+    <style>
+        .ejemplo{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="ejemplo">DIV NORMAL</div>
+    <div class="ejemplo">DIV MODIFICADO</div>
+    
+
+    <script>
+        //OBJETIVO: QUEREMOS CAMBIAR EL COLOR DEL BORDE, DE NEGRO A ROJO.
+        const miDiv = document.querySelector('div:nth-child(2)');
+
+        //FORMA 1, usando pseudoclases
+        // miDiv.setAttribute('style', 'heigh: 100px; width: 100px; border: 2px solid red; margin-bottom: 5px;');
+
+        //FORMA 2
+        miDiv.style.borderRadius = '50%';
+        miDiv.style.display = 'flex';
+        miDiv.style.justifyContent = 'center';
+        miDiv.style.margnLeft = '40px';
+        miDiv.style.border = '2px solid red';
+    </script>
+</body>
+</html>

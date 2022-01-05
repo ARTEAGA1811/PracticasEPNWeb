@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambio de clases con JS</title>
+    <style>
+        .mostrar{
+            display: block;
+        }
+        .ocultar{
+            display: none;
+        }
+        .cajaRoja{
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div>DIV 1</div>
+    <div id="div_ejemplo" class="mostrar">DIV 2</div>
+
+    <button onclick="mostrarClase();">Mostrar Clase</button>
+    <button onclick="ocultarClase();">Ocultar Clase</button>
+    <button onclick="agregarClase();">Agregar Clase</button>
+    <button onclick="removerClase();">Eliminar Clase</button>
+
+
+    <script>
+        function mostrarClase(){
+            document.getElementById('div_ejemplo').classList.remove('ocultar');
+            document.getElementById('div_ejemplo').classList.add('mostrar');
+        }
+        function ocultarClase(){
+            document.getElementById('div_ejemplo').classList.remove('mostrar');
+            document.getElementById('div_ejemplo').classList.add('ocultar');
+        }
+        function agregarClase(){
+            document.getElementById('div_ejemplo').classList.add('cajaRoja');
+        }
+        function removerClase(){
+            elemento = document.getElementById('div_ejemplo');
+            if(elemento.classList.contains('cajaRoja')){
+                elemento.classList.remove('cajaRoja');
+            }
+        }
+    </script>
+
+
+</body>
+</html>

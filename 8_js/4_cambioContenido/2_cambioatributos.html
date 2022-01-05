@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambio de Atributos,con JS, de elementos HTML</title>
+</head>
+<body>
+    <h1>Cambio de atributos de elementos HTML</h1>
+    <h2>Ejemplo cambiando atributo src de una imagen</h2>
+    <img src="https://picsum.photos/id/1003/300/300" alt="lorem">
+
+    <h3>Haga clic en cada funcion para ver el resultado</h3>
+    <div class="mensaje"></div>
+    <ul>
+        <li onclick="tieneAtributo();">img.hasAttribute('src')</li>
+        <li onclick="obtenerAtributo();">img.getAttribute('src')</li>
+        <li onclick="configurarAtributo();">img.setAttribute('src')</li>
+        <li onclick="removerAtributo();">img.removeAttribute('src')</li>
+    </ul>
+
+    <script>
+        var elementoImg = document.querySelector('img');
+        var mensaje = document.querySelector('.mensaje');
+
+        function tieneAtributo(){          
+            
+            if(elementoImg.hasAttribute('src')){
+                mensaje.textContent = 'La imagen tiene atributo src';
+            }else{
+                mensaje.textContent = 'La imagen NO tiene atributo src';
+            }
+        }
+
+        function obtenerAtributo(){
+            mensaje.textContent = elementoImg.getAttribute('src');
+        }
+
+        function configurarAtributo(){
+            elementoImg.setAttribute('src', 'https://picsum.photos/id/120/300/300');
+            mensaje.textContent = 'Imagen cambiada a https://picsum.photos/id/120/300/300';
+        }
+        
+        function removerAtributo(){
+            elementoImg.removeAttribute('src');
+            mensaje.textContent = 'Imagen removida';
+        }
+    </script>
+</body>
+</html>
