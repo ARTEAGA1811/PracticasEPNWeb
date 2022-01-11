@@ -4,7 +4,7 @@ function mostrarMensaje(){
 
 
 function mostrarMensajeDelElementoHTML(elementoHTML){
-
+   // alert("Wenas soy David")
 }
 function inicializar(){
     //console.log('Me ejecuto cuando el DOM está listo, despues de cargar todo el DOM');
