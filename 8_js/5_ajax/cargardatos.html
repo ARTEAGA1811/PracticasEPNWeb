@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carga de datos con AJAX</title>
+</head>
+<body>
+    <div>
+        <h1>Cambio de texto usando AJAX</h1>
+        <h3>Contenido estatico</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, eveniet. Eum nam exercitationem porro necessitatibus. Magnam, vero perspiciatis nam culpa consequuntur optio minus recusandae. Vitae accusantium fugiat mollitia asperiores perferendis.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ut dolorum quam inventore, repudiandae, ipsum minima voluptate asperiores aliquid nihil eaque quos quibusdam culpa explicabo beatae error perferendis similique excepturi?</p>
+
+        <h3>Contenido Dinamico</h3>
+        <button onclick="cargarFichero();">Llamada con AJAX</button>
+        <div id="contenidocargado"></div>
+    </div>
+
+
+    <script>
+        function cargarFichero(){
+            //Se crea la instancia de XMLHttpRequest
+            var xhttp = new XMLHttpRequest();
+
+            //Se configura la peticion
+            //Se pone true para que sea asincrona
+            //xhttp.open("GET", "ajax_info.txt", true);
+            xhttp.open("GET", "fichero.json", true);
+
+            //Enviar la peticion
+            xhttp.send();
+
+            //Asignar la funcion que responde al evento
+            xhttp.onreadystatechange = function() {
+                //Si el estado es 4 y el codigo de estado es 200
+                if (this.readyState == 4 && this.status == 200) {
+                    //Obtengo los datos del fichero (responseText)
+                    var data = this.responseText;
+                    console.log(JSON.parse(data));
+                    //document.getElementById("contenidocargado").innerHTML = data;
+                }
+            };
+
+            //Cuando el this va solito, se hacer referencia al objeto window.
+
+            //Si pongo el this dentro de una funcion anonima, se hace referencia al objeto que se asigna la
+            //funcion anonima.
+
+        }
+    </script>
+</body>
+</html>

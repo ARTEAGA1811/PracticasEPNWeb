@@ -1,0 +1,7 @@
+{
+    "lista": [
+        {"nombre": "David"},
+        {"nombre":"Carla"},
+        {"nombre":"Juan"}
+    ]
+}
