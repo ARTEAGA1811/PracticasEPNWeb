@@ -2,14 +2,19 @@
     width: 850px;
     height: 527px;
     /* border: 2px solid black; */
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 
-#menu_izq{
-    width: 6%;
+.menu_izq{
+    width: 200px;
     height: 527px;
     background-color: #151719;
     float: left;
+    text-align: right;
+    position: absolute;
+    left: -149px;
+    transition: all 0.5s ease;
+    z-index: 100;
 }
 
 #cont_imagenes{
@@ -29,8 +34,8 @@ img{
     width: 94%;  
     padding: 8px 0;
     background-color: rgb(69,68,68);
-    display: inline-block;
     text-align: center;
+    float: right;
 
 }
 
@@ -38,8 +43,9 @@ img{
     display: inline-block; 
     color: white;
     background-color: #b4b3b3;
-    padding: 8px;
+    padding: 6px 10px;
     border: 2px solid #b4b3b3;
+    font-weight: bolder;
 
 }
 
@@ -47,6 +53,7 @@ button{
     font-weight: 600px;
     font-size: 18px;
     border-radius: 6px;
+
 }
 
 #numerador{
@@ -58,4 +65,40 @@ button{
     background-color: #5C5A58;
     border: 1px solid #5C5A58;
     padding: 5px 10px;
+    font-weight: 400;
 }
+
+
+/* HAmburguesa */
+
+#icono_hamburguesa{
+    color: white;
+    margin-top: 15px;
+    /* display: inline-block; */
+
+}
+
+
+
+/* Para agregar en el javascript */
+.activo{
+    left: 0;
+}
+
+.cont-menu ul{
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+       
+}
+
+.cont-menu ul li{
+    color: rgba(230, 230, 230, 0.9);
+    padding: 15px 10px;
+    text-decoration: none;
+    display: block;
+    
+    
+}
+
