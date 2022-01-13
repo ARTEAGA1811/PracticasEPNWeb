@@ -1,26 +1,10 @@
 #contenedor{
     width: 850px;
     height: 527px;
-    /* border: 2px solid black; */
-    /* background-color: aqua; */
-}
-
-.menu_izq{
-    width: 200px;
-    height: 527px;
-    background-color: #151719;
-    float: left;
-    text-align: right;
-    position: absolute;
-    left: -149px;
-    transition: all 0.5s ease;
-    z-index: 100;
 }
 
 #cont_imagenes{
     width: 94%;
-    /* height: calc(527px - 66px); */
-    /* background-color: red; */
     border: 8px solid #5C5A58;
     float: right;   
 }
@@ -70,15 +54,27 @@ button{
 
 
 /* HAmburguesa */
+.menu_izq{
+    width: 200px;
+    height: 527px;
+    background-color: #151719;
+    float: left;
+    text-align: right;
+    position: absolute;
+    left: -149px;
+    transition: all 0.5s ease;
+    z-index: 100;
+}
 
 #icono_hamburguesa{
     color: white;
     margin-top: 15px;
-    /* display: inline-block; */
-
+    margin-right: 13px;
 }
 
-
+#icono_hamburguesa:hover{
+    cursor: pointer;
+}
 
 /* Para agregar en el javascript */
 .activo{
@@ -98,7 +94,9 @@ button{
     padding: 15px 10px;
     text-decoration: none;
     display: block;
-    
-    
+}
+
+.cont-menu ul li:hover{
+    cursor: pointer;
 }
 

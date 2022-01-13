@@ -28,6 +28,7 @@ function accionBtnBack(){
 
 
 function menuHamburguesa(){
+    //Agrego la clase "activo" al menu
     if(menuIzq.classList.contains("activo")){
         menuIzq.classList.remove("activo");
     }else{
