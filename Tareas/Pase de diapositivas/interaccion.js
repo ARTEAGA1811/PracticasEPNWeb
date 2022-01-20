@@ -1,6 +1,6 @@
-var inicial = document.getElementById("inicial"); 
+var inicial = document.getElementById("inicial"); //numero de la diapositiva
 var miImagen = document.querySelector("img");
-var menuIzq = document.querySelector(".menu_izq");
+var menuIzq = document.querySelector(".menu_izq"); //Menu hamburguesa
 var numActual = 1;
 var imgList = ["recursos/Diapositiva1.png", "recursos/Diapositiva2.png", "recursos/Diapositiva3.png"];
 
@@ -37,6 +37,7 @@ function menuHamburguesa(){
 }
 
 function irADiapositiva(num){
+    //Se cambia al numero de la diapositiva especificada
     numActual = num;
     inicial.textContent = num;
     miImagen.src = imgList[num-1];
